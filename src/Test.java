@@ -6,7 +6,7 @@ public class Test {
 	public void test() {
 		Calculadora casio = new Calculadora();
 		try{
-			casio.suma();
+			casio.suma(,5);
 			fail("Not yet implemented");
 		}catch (NumberFormatException e) {
 			
@@ -16,7 +16,7 @@ public class Test {
 	@org.junit.Test (expected=Exception.class)
 	public void testCalculaDivision() throws Exception {
 		Calculadora casio = new Calculadora();
-	casio.division();
+	casio.division(5,0);
 	}
 
 }
